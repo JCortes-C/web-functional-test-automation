@@ -1,0 +1,28 @@
+{
+  "name": "web-test-automation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "generacionallure": "allure generate ./output/allure-results -o ./allure-report --clean",
+    "abrirreporteallure": "allure open ./allure-report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.17.1",
+  "devDependencies": {
+    "@codeceptjs/allure-legacy": "^1.0.2",
+    "@types/node": "^26.6.4",
+    "allure-commandline": "^2.46.1",
+    "codeceptjs": "^4.1.0",
+    "playwright": "^1.63.0",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  },
+  "type": "module",
+  "dependencies": {
+    "@codeceptjs/helper": "^2.0.4"
+  }
+}
