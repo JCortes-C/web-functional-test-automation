@@ -16,7 +16,6 @@ exports.config = {
   },
   include: {
      I: './steps_file.ts',
-     youtubePages: './pages/telcelPages.ts',
      validarPagina: './pages/validarPaginaPages.ts',
   },
   mocha: {},
@@ -27,7 +26,6 @@ exports.config = {
   gherkin: {
      features: './features/*.feature',
      steps: [
-        './step_definitions/steps.ts',
         './step_definitions/validarPaginaSteps.ts'
       ]
   },
