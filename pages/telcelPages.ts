@@ -5,7 +5,7 @@ class YoutubePage {
     fields = {
         buscador: '//input[@name="search_query"]',
         primerVideo: '//ytd-video-renderer[1]//a[@id="video-title"]',
-        tituloVideo: '//*[@id="title"]/h1/yt-formatted-strin'
+        tituloVideo: '//*[@id="title"]/h1/yt-formatted-string'
     };
 
     abrirYoutube() {

@@ -3,7 +3,7 @@ exports.config = {
   helpers: {
     Playwright: {
       browser: 'chromium',
-      url: 'https://www.youtube.com/',
+      url: 'https://www.saucedemo.com/',
       show: true,
       video: true,
       pressKeyDelay: 100,
@@ -16,7 +16,8 @@ exports.config = {
   },
   include: {
      I: './steps_file.ts',
-     youtubePages: './pages/telcelPages.ts'
+     youtubePages: './pages/telcelPages.ts',
+     validarPagina: './pages/validarPaginaPages.ts',
   },
   mocha: {},
   bootstrap: null,
@@ -25,7 +26,10 @@ exports.config = {
   hooks: [],
   gherkin: {
      features: './features/*.feature',
-     steps: ['./step_definitions/steps.ts']
+     steps: [
+        './step_definitions/steps.ts',
+        './step_definitions/validarPaginaSteps.ts'
+      ]
   },
   plugins: {
     screenshot: {
