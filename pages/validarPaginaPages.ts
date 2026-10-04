@@ -22,7 +22,6 @@ class validarPaginAPages {
         I.seeElement( this.fields.formulario);
     }
 
-
     //====================================================================================
 }
 

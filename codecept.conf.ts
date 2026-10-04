@@ -17,6 +17,7 @@ exports.config = {
   include: {
      I: './steps_file.ts',
      validarPagina: './pages/validarPaginaPages.ts',
+     loginPage: './pages/loginPage.ts',
   },
   mocha: {},
   bootstrap: null,
@@ -26,7 +27,8 @@ exports.config = {
   gherkin: {
      features: './features/*.feature',
      steps: [
-        './step_definitions/validarPaginaSteps.ts'
+        './step_definitions/validarPaginaSteps.ts',
+        './step_definitions/loginSteps.ts'
       ]
   },
   plugins: {
