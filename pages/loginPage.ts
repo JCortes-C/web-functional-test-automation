@@ -7,7 +7,9 @@ class validarlogin {
         password: '//input[@id="password"]',
         botonInicioSesion: '//input[@id="login-button"]',
         mensajeError:'.error-message-container',
-        tituloPaginaProducto: '//span[normalize-space(text())="Products"]'
+        tituloPaginaProducto: '//span[normalize-space(text())="Products"]',
+        botonMenu: '//button[@id="react-burger-menu-btn"]',
+        opcionCerrarSesion: '//a[@data-test="logout-sidebar-link"]',
     }
     // Página Principal
     pagina(){
@@ -34,6 +36,22 @@ class validarlogin {
         }
      }
      // =====================================================================================
+     // TC-003
+     // Abrir el menú lateral
+    abrirMenu() {
+        I.click(this.fields.botonMenu);
+    }
+    // Seleccionar la opción Logout
+    cerrarSesion() {
+        I.waitForElement(this.fields.opcionCerrarSesion, 5);
+        I.click(this.fields.opcionCerrarSesion);
+    }
+    // Validar que se muestre la página de login
+    validarPaginaLogin() {
+        I.seeElement(this.fields.botonInicioSesion);
+    }
+     // =====================================================================================
+
 
 }
 
