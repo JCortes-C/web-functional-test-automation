@@ -33,10 +33,6 @@ const {   loginPage } = inject() as any;
       loginPage.ingresarPassword(password);
    });
 
-   // Then('el usuario selecciona el botón de inicio de sesión', () => {
-   //    loginPage.iniciarSesion();
-   // });
-
    Then('el usuario abre el menú lateral', () => {
       loginPage.abrirMenu();
    });

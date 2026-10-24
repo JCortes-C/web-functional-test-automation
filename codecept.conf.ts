@@ -18,6 +18,7 @@ exports.config = {
      I: './steps_file.ts',
      validarPagina: './pages/validarPaginaPages.ts',
      loginPage: './pages/loginPage.ts',
+     validarOpcionesMenu: './pages/menuPages.ts',
   },
   mocha: {},
   bootstrap: null,
@@ -28,7 +29,8 @@ exports.config = {
      features: './features/*.feature',
      steps: [
         './step_definitions/validarPaginaSteps.ts',
-        './step_definitions/loginSteps.ts'
+        './step_definitions/loginSteps.ts',
+        './step_definitions/menuSteps.ts',
       ]
   },
   plugins: {
